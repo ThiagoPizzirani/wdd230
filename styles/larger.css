@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 
     body {
         display: grid;
@@ -10,8 +10,8 @@
       }
       
       header {
-        background: #FFF6E0;
-        color: black;
+        background: #000000;
+        color: rgb(255, 255, 255);
         padding: 1rem;
         display: flex;
 	
@@ -31,24 +31,29 @@
       
       nav {
         background: #61677A;
-        
+        grid-column: 1/ 4;
         text-align: center;
       }
     
-      nav ul {
-		display: flex;
-	    }
-	  nav ul li {
-		flex: 1 1 100%;
-	    }
+      li {
+        list-style-type: none;
+        }
     
       nav a {
         text-decoration: none;
         font-weight: 300;
-        font-size: 1.3em;
+        font-size: 1.8em;
         color: white;
       }
-      
+
+      nav ul {
+		  display: flex;
+	    }
+	   nav ul li {
+		  flex: 1 1 100%;
+	    }
+    
+
       main {
         background: #e9eaeb;
         padding: 1rem;
@@ -80,7 +85,28 @@
         padding: 1rem;
         
       }
+
+      #menu {
+        display: none;
+      }
+
+      #top-navigation {
+        flex-direction: row;
+      }
+    
+      #top-navigation li {
+        display: block;
+        flex: 1 1 100%;
+      }
       
+      .map {
+        margin: 1rem auto;
+        border: 1px solid rgba(0,0,0,.1);
+        background-color: #bed;
+        width: 800px;
+        height: 500px;
+      }
+
       #activities{
         text-align: left;
       }

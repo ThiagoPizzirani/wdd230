@@ -25,6 +25,8 @@ body {
     vertical-align: top;
   }
   
+
+
   .card {
     border-radius: 25px;
     outline-style:solid;
@@ -86,6 +88,10 @@ body {
       grid-column: auto;
     }
   
+    .nav menu {
+      display: none;
+    }
+
     .card img {
       width: 250px;
       height: 170px;
