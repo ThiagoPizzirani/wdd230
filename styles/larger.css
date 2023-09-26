@@ -90,11 +90,11 @@
         display: none;
       }
 
-      #top-navigation {
+      .top-navigation {
         flex-direction: row;
       }
     
-      #top-navigation li {
+      .top-navigation li {
         display: block;
         flex: 1 1 100%;
       }
