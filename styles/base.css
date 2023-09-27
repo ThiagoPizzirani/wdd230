@@ -9,7 +9,7 @@
     width: 500px;
     margin:0 auto;
     font-family: Nunito Sans;
-    grid-template: 250px auto 1fr auto /  1fr;
+    grid-template: 190px auto 1fr auto /  1fr;
   }
   
   header {
