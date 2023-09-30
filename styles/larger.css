@@ -100,11 +100,17 @@
       }
       
       .map {
-        margin: 1rem auto;
+
         border: 1px solid rgba(0,0,0,.1);
         background-color: #bed;
-        width: 800px;
-        height: 500px;
+        width: 740px;
+        height: 420px;
+      }
+
+     iframe {
+        margin: 10px;
+        grid-column: 1/ 4;
+        width: 720px;
       }
 
       #activities{
