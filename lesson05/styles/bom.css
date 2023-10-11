@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: Acme, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.5rem;
+    color: #04655f;
+}
+
+main {
+	margin: 1rem auto;
+	border: 1px solid rgb(0, 0, 0);
+	padding: 1rem;
+	background-color: #04655f;
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+button {
+	padding: 0.3rem;
+}
+
+button {
+	margin: 0.3rem;
+    font-weight: 900;
+}
+
+.delete {
+	width: fit-content;
+}
+
+.input {
+	display: flex;
+	gap: 1rem;
+}
+
+.list {
+	padding: 0.5rem;
+}
+
+ul {
+	margin: 1rem;
+	list-style: none;
+    font-size: 1.1em;
+}
+
+label{
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 32.5em) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	main {
+		width: 320px;
+	}
+}
