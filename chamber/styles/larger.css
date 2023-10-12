@@ -141,7 +141,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .member-card{
+    .member-card, .member-card2, .member-card3{
         outline-style:solid;
         outline-width: thin;
         background-color: #576CBC;
@@ -181,6 +181,16 @@
     #contact img {
         width: 40px;
         height: 40px;
+    }
+
+    #mode {
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        font-size: 1.5rem;
+        cursor: pointer;
+    
     }
 
 }
