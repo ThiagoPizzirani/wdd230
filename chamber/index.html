@@ -13,6 +13,7 @@
     <meta property="og:image" content="https://images.app.goo.gl/oCaQAAaMv1oftyTB7" />
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <title>WDD 230 - RRTX Chamber of Commerce Site</title>
 </head>
@@ -21,7 +22,7 @@
         ☑️dark
     </div>
     <header>
-        <div id="logo"><img src="images/logo-chamber.jpeg" alt="logo of the round rock chamber"></div>
+        <div id="logo"><img src="images/logo-chamber.webp" alt="logo of the round rock chamber"></div>
         <div id="social"><img src="images/facebook-icon.png" alt="social icon of facebook"><img src="images/linkedin-icon.png" alt="social icon of linkedin"></div>
         <nav>
             <button id="menu"></button>
@@ -36,10 +37,30 @@
     </header>
     
     <main>
-        <div id="hero-img">
+        <!-- week 6 Hero change -->
+        <div class="hero">
+            <picture>
+                <source srcset="images/wdd230-week6-small.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-week6-medium.webp" media="(max-width: 680px)">
+                <img src="images/wdd230-week6-large.webp" alt="hero people week 6" width="700" height="466">
+            </picture>
+            <div class="herolabel-large">
+                <p>Large hero</p>
+            </div>
+            <div class="herolabel-small">
+                <p>Small hero</p>
+            </div>
+            <div class="herolabel-medium">
+                <p>Medium hero</p>
+            </div>
+        </div>
+
+        <!-- Original hero 
+            <div id="hero-img">
             <img src="images/hero-img-chamber.png" alt="hero image of the round rock chamber"></div>
             <div id="hero-msg">Step up to</div>
-            <button id="join">Join Us</button>
+            <button id="join">Join Us</button> 
+        -->
         
         <section id="content">
             <div id="events">
@@ -47,11 +68,18 @@
                 <p>Tuesday, October 3, 2023 8:00 - 10:00 AM CST</p>
                 <p>Centro Event Space</p>
                 <p>305 W Liberty Avenue 2nd Floor - Round Rock, TX 78664</p>
+
             </div>
             <div id="weather">
                 <h3>Weather</h3>
                 <span id="location">Rexburg, Idaho</span><br>
-                <span id="weather-info"><img src="images/weather-icon.png" alt="cloud rain icon"> 75&deg;F - Rain</span>
+                <span id="weather-info"><img src="images/weather-icon.png" alt="cloud rain icon"> <span id="windchill-result"></span></span>
+                <div id="inputs">
+                    <br>Air temperature (°F): <input type="text" id="input-air-temp">
+                    <br>Wind speed (mph):<input type="text" id="input-wind-speed"> 
+                <span id="input-wind-speed"></span>
+                <button id ="wind-chill" type="submit">Wind Chill Index</button>
+                </div>
             </div>
         </section>
         <section id="members">
@@ -86,5 +114,6 @@
         <p id="last-mod"></p>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

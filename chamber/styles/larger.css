@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
 
     body {
       display: grid;
@@ -57,7 +57,7 @@
         margin-top: 30px;
     }
    
-    button {
+    #menu {
         display: none;
     }
 
@@ -81,6 +81,16 @@
         top: 25%;
         left: 38%;
         font-weight: 900;
+    }
+    
+
+    #wind-chill{
+        padding: 10px 20px;
+        background-color: rgb(219, 186, 55);
+        color: #000;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.9em;
     }
 
     .navigation li{
@@ -193,4 +203,27 @@
     
     }
 
+    .herolabel-large {
+        position: absolute;
+        display: block;
+        top: 30px;
+        left: 30px;
+        background: radial-gradient(#fff, #6ba077);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 0.8rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+      }
+      
+      .herolabel-large p {
+        margin: 0;
+        padding: .20rem;
+        font-weight: 700;
+        font-size: 1.2rem;
+        font-family:"Nunito Sans", serif;
+      }
+
+      .herolabel-small, .herolabel-medium  {
+        display: none;
+        } 
 }

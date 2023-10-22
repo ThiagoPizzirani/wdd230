@@ -1,4 +1,4 @@
-@media (min-width: 300px) {
+@media (min-width: 450px) {
 
     body {
       display: grid;
@@ -40,7 +40,7 @@
         position: relative;
 
 
-        left: 250px;
+        left: 180px;
         top: 15px;
     }
     
@@ -73,6 +73,15 @@
         top: 15%;
         left: 38%;
         font-weight: 700;
+    }
+
+    #wind-chill{
+        padding: 10px 20px;
+        background-color: rgb(219, 186, 55);
+        color: #000;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 0.8em;
     }
 
     .navigation {
@@ -185,5 +194,37 @@
         height: 40px;
     }
 
+    .hero picture{
+        width: 100%
+    }
+    
+      .hero img {
+        width: auto;
+        height: 100%;
+    }
+
+    .herolabel-small {
+        position: absolute;
+        display: block;
+        top: 30px;
+        left: 30px;
+        background: radial-gradient(#fff, #1e3590);
+        border: 1px solid rgba(0,0,0,.75);
+        padding: 0.7rem;
+        box-shadow: 0 0 3rem #fff;
+        opacity: 0.75;
+      }
+      
+      .herolabel-small p {
+        margin: 0;
+        padding: .20rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        font-family:"Nunito Sans", serif;
+      }
+
+      .herolabel-large, .herolabel-medium  {
+        display: none;
+      }
    
 }
