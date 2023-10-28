@@ -1,5 +1,6 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
+const visitmsg1 = document.querySelector('#visitmsg');
  
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -12,6 +13,22 @@ const date = document.lastModified;
       const lastModified = new Date(date).toLocaleString();
       document.getElementById("last-mod").innerHTML = "Last Modification: " + lastModified;
 
+const setdate = new Date().getDate();
+
+const timestamp = Date.now()
+const timestampconv = new Date(timestamp).getDate()
+
+const compare = (setdate - timestamp)
+
+let dateVisit = Number(localStorage.getItem("dateVisitmsg")) || setdate;
+
+     if (dateVisit !== 0) {
+                  if ( compare > 1) {
+                        visitmsg1.innerHTML = 'Your last visited ' + compare + ' days ago'}
+                  else {visitmsg1.innerHTML = 'Back so soon! Awesome '}
+     } else {
+           visitmsg1.innerHTML = "Welcome, let us know if you have any questions";
+     } 
 
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
@@ -46,4 +63,8 @@ const weather = document.querySelector("#weather");
                   modeButton.textContent = "☑️dark";
             }
       });
+
       
+
+      
+        
