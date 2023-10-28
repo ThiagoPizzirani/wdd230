@@ -137,7 +137,7 @@
         font-size: 0.9em;
     }
 
-    #events, #weather {
+    #events, #events2, #weather {
         outline-style:solid;
         outline-width: thin;
         background-color: #19376D;
