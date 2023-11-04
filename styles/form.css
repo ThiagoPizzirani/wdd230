@@ -89,3 +89,13 @@ form label.top input:required:valid {
     vertical-align: middle;
     color: #9c2c13;
 }
+
+#thankyoumessage {
+    vertical-align: middle;
+    text-align: center;
+    color: #9c2c13;
+    font-size: 1.1rem;
+    grid-column: 1/4;
+    margin: 25px;
+    font-weight: 700;
+}
