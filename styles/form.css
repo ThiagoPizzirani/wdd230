@@ -14,7 +14,7 @@ form fieldset{
 form legend {
     color: #445ba9;
     margin: 0 1rem;
-    padding: 0 .5re;
+    padding: 0.5rem;
 }
 
 form label.top, form div{
@@ -63,7 +63,7 @@ form label.top input:required:valid {
 
 #r {
 	margin-bottom: 0;
-    margin-top: 20;
+    margin-top: 20px;
     width: 350px;
     background-color: #9c2c13;
     font-size: .8rem;
