@@ -16,6 +16,7 @@
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
      
 </head>
 <body>
@@ -44,11 +45,39 @@
 		</div>
     </div>
     <main>
-        
-        
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Application Information</legend>
+                <label class="top">Username* <input type="text" name="username" required></label>
+                <label class="top">Password* <input type="password" id="pass1" name="pass1"pattern="[a-Za-z]{>7}" required></label>
+                <label class="top">Re-enter Password* <input type="password" id="pass2" name="pass2"  required></label>
+                <label class="top">Email* <input type="email" name="email" patern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+                
+                <label for="r"><br>Rate Us <br></label>
+                    <span id="rangevalue">0</span>
+                    <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                        <datalist id="rangevalues">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </datalist>
+           
+            </fieldset>
+
+          <input type="submit" value="Set Me Up" class="submitBtn">
+
+        </form>
 
     </main>
-   
 
     <footer>
         <p id="year"></p>
