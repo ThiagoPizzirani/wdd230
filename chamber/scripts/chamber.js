@@ -38,7 +38,7 @@ const card3 = document.querySelector(".member-card3");
 const events = document.querySelector("#events");
 const weather = document.querySelector("#weather");
       
-      modeButton.addEventListener("click", () => {
+/**      modeButton.addEventListener("click", () => {
             if (modeButton.textContent.includes("☑️dark")) {
                   main.style.background = "#000";
                   card.style.background = "#000";
@@ -62,9 +62,28 @@ const weather = document.querySelector("#weather");
                   weather.style.color = "rgb(219, 186, 55)";
                   modeButton.textContent = "☑️dark";
             }
-      });
+      });  */
 
       
+let field = document.querySelector('#timestamp');
+let timenow = Date.now();
+// Set the date
+field.value = timenow;
 
-      
-        
+const input = document.querySelector("#title");
+const output = document.querySelector("#output");
+
+const re = /([A-Z,a-z, ,-]){7}\w+/g;
+
+function testInfo(title) {
+  const ok = re.exec(title.value);
+
+  output.textContent = ok
+    ? ''
+    : `Title only accepts alpha characters, hyphens, and spaces with a minimum of 7 characters `;
+}
+
+input.addEventListener("change", (event) => {
+  event.preventDefault();
+  testInfo(input);
+});       
