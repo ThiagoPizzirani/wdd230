@@ -43,7 +43,7 @@
                     <legend>Applicant Information</legend>
                     <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
                     <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
-                    <label class="top">Title/Position <input type="text" name="title" id="title"><div id="output"></div></label>
+                    <label class="top">Title/Position <input type="text" name="title" id="title"></label><div id="output"></div>
                     <label class="top">Email* <input type="email" name="email" id="email" placeholder="addyouremail@gmail.com" required></label>
                     <label class="top">Phone* <input type="tel" name="phone" id="phone" placeholder="000000000" required></label>
                 </fieldset>
@@ -56,10 +56,10 @@
                     <label class="sbs"><input type="radio" name="membership" value ="bronze"> Bronze</label>
                     <label class="sbs"><input type="radio" name="membership" value ="silver"> Silver</label>
                     <label class="sbs"><input type="radio" name="membership" value ="gold"> Gold</label>
-                    <label class="top">Business Description <input type="textarea" name="busdesc" id="busdesc"></label>
+                    <label class="top">Business Description <textarea name="busdesc" id="busdesc" rows="4" cols="50"></textarea></label>
                     </fieldset>
                     <input type="hidden" value="" id="timestamp" name="timestamp">
-              <input type="submit" value="Join Chamber" class="submitBtn" alt="push the button to sign up">
+              <input type="submit" value="Join Chamber" name="submitBtn" id="submitBtn">
 
             </form>
      </div>
@@ -73,7 +73,7 @@
                 <li>4 professional trainings per year</li>
                 <li>Business included in yearly catalog</li>
             </ul>
-            <span id="price">Investment: $799</span>
+            <span class="price">Investment: $799</span>
         </div>
         <div class="member-card2">
             <h3>Silver Level</h3>
@@ -83,7 +83,7 @@
                 <li>3 professional trainings per year</li>
                 <li>Business included in yearly catalog</li>
             </ul>
-            <span id="price">Investment: $599</span>
+            <span class="price">Investment: $599</span>
         </div>
         <div class="member-card2">
             <h3>Bronze Level</h3>
@@ -91,7 +91,7 @@
                 <li>10% discount on local events</li>
                 <li>2 professional trainings per year</li>
             </ul>
-            <span id="price">Investment: $299</span>
+            <span class="price">Investment: $299</span>
         </div>
         <div class="member-card2">
             <h3>Non-Profits</h3>
@@ -99,7 +99,7 @@
                 <li>30% discount on local events</li>
                 <li>2 professional trainings per year</li>
             </ul>
-            <span id="price">Investment: Free</span>
+            <span class="price">Investment: Free</span>
         </div>
     
       </div>

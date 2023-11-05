@@ -266,7 +266,7 @@
     form legend {
         color: #445ba9;
         margin: 0 1rem;
-        padding: 0 .5re;
+        padding: 0.5rem;
     }
     
     form label.top, form div{
@@ -294,17 +294,29 @@
         color: #555;
     }
     
-    form input.submitBtn {
+    #submitBtn {
         border: none;
-        background-color: #9c2c13;
+        background-color: #576CBC;
         color: white;
+        font-weight: 600;
         border-radius: 1rem;
         padding: .75rem 1.5rem;
         margin: 0 0 2rem 2%;
         width: 96%;
         max-width: 20rem;
     }
-    
+
+    #busdesc {
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999999b0;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        width: 90%;
+        max-width: 20rem;
+        background-color: rgba(0, 0, 0, 0.049);
+    }
    
     form label.top input:required {
         border-left: rgb(161, 4, 4) solid 6px;
@@ -331,7 +343,7 @@
         margin-top: 2px;
     }
 
-    #price {
+    .price {
         font-weight: 700;
         color: rgb(219, 186, 55);
     }

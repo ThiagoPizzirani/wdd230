@@ -309,9 +309,6 @@
         background-color: rgba(0, 0, 0, 0.049);
     }
     
-    #busdesc {
-        padding-bottom: 3.5rem;
-    }
 
     form label.sbs  {
         display: block;
@@ -319,7 +316,7 @@
         color: navy;
     }
     
-    form input.submitBtn {
+    #submitBtn {
         border: none;
         background-color: #576CBC;
         color: white;
@@ -329,6 +326,18 @@
         margin: 0 0 2rem 2%;
         width: 96%;
         max-width: 20rem;
+    }
+
+    #busdesc {
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999999b0;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        width: 90%;
+        max-width: 20rem;
+        background-color: rgba(0, 0, 0, 0.049);
     }
     
     form label.top input:required {
@@ -356,7 +365,7 @@
         margin-top: 2px;
     }
 
-    #price {
+    .price {
         font-weight: 700;
         color: rgb(219, 186, 55);
     }
