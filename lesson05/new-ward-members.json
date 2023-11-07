@@ -1,0 +1,33 @@
+{
+    "familyName" : "Johnson",
+    "moveinDate" : "2020-01-20",
+    "indivFamily" : 5,
+    "visitedBishopric" : true,
+    "members" : [
+      {
+        "name" : "David Arthur Johnson",
+        "gender" : "Male",
+        "birthDate" : "1971-05-08"
+      },
+      {
+        "name" : "Elizabeth Jane Johnson",
+        "gender" : "Female",
+        "birthDate" : "1972-07-12"
+      },
+      {
+        "name" : "Summer Jean Johnson",
+        "gender" : "Female",
+        "birthDate" : "1997-09-30"
+      },
+      {
+        "name" : "Robert Rick Johnson",
+        "gender" : "Male",
+        "birthDate" : "2001-01-09"
+      },
+      {
+        "name" : "Esther Hale Johnson",
+        "gender" : "Female",
+        "birthDate" : "2004-11-02"
+      }
+    ]
+  }
