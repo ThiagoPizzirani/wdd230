@@ -1,0 +1,23 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+#prophets_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+article {
+    margin: 10px;
+    background-color: rgba(44, 79, 129, 0.829);
+    color: white;
+}
+
+button, select {
+    background-color:  rgba(44, 79, 129, 0.829);
+    color: white;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
