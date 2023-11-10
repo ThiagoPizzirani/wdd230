@@ -137,6 +137,15 @@
     padding: 1rem;
     grid-column: 1/ 4;
   }
+
+  .card-links{
+    display: inline-flex;
+    font-size: 0.8em;
+    text-align: left;
+    margin-left: -20px;
+    width: 400px;
+    list-style: none;
+  }
   
   #activities{
     text-align: left;
