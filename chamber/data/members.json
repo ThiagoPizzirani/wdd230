@@ -1,0 +1,77 @@
+{
+    "members" : [
+      {
+        "name" : "St Dominico Hign School",
+        "address" : "9311 Neebah Ave, Austin, TX",
+        "phonenumber" : "(521) 388-0303",
+        "website" : "www.stdominico.com",
+        "icon" : "images/stdominico.WEBP",
+        "membership" : "Gold",
+        "since" : "2021"
+      },
+      {
+        "name" : "Blue Ribbon Cooling",
+        "address" : "3121 Eagles St, Round Rock, TX",
+        "phonenumber" : "(521) 308-9999",
+        "website" : "www.blueribbon.com",
+        "icon" : "images/blueribbon.WEBP",
+        "membership" : "Silver",
+        "since" : "1997"
+      },
+      {
+        "name" : "Salt Service Co. Plumbing",
+        "address" : "3071 CR 110, Hutton, TX",
+        "phonenumber" : "(521) 577-1234",
+        "website" : "www.saltplumbing.com",
+        "icon" : "images/saltplumbing.WEBP",
+        "membership" : "Silver",
+        "since" : "2011"
+      },
+      {
+        "name" : "LJA Engineering Inc.",
+        "address" : "2100 La Frontera Blvd, Hutton, TX",
+        "phonenumber" : "(521) 432-1000",
+        "website" : "www.ljaenggtxc.com",
+        "icon" : "images/ljaengg.webp",
+        "membership" : "Bronze",
+        "since" : "2015"
+      },
+      {
+        "name" : "Central Texas Refuse",
+        "address" : "93000 FM 815, Austin, TX",
+        "phonenumber" : "(521) 222-4444",
+        "website" : "www.ctrefuseatx.com",
+        "icon" : "images/centraltexasrefuse.WEBP",
+        "membership" : "Gold",
+        "since" : "1999"
+      },
+      {
+        "name" : "Garver Industries",
+        "address" : "280 Inner Loop, Hutton, TX",
+        "phonenumber" : "(521) 485-0202",
+        "website" : "www.garverindustries.com",
+        "icon" : "images/garverind.WEBP",
+        "membership" : "Bronze",
+        "since" : "2021"
+      },
+      {
+        "name" : "Aguirre & Fields",
+        "address" : "12700 Riata Circle, Austin, TX",
+        "phonenumber" : "(521) 610-7080",
+        "website" : "www.aguirrefields.com",
+        "icon" : "images/aguirrefields.WEBP",
+        "membership" : "Gold",
+        "since" : "2002"
+      },
+      {
+        "name" : "Wingate Conference Center",
+        "address" : "1200 N Interstate 31, Austin, TX",
+        "phonenumber" : "(521) 300-1000",
+        "website" : "www.wingatecenter.com",
+        "icon" : "images/wingate.WEBP",
+        "membership" : "Silver",
+        "since" : "2017"
+      }
+      
+    ]
+  }

@@ -348,4 +348,101 @@
         color: rgb(219, 186, 55);
     }
    
+        /**  Directory Styles with JS **/
+
+        main h1 {
+            font-size: 1.7em;
+            color: #576CBC;
+        }
+    
+        .toggle {
+            margin: 1rem auto;
+            border: 1px solid rgba(0, 0, 0, 0.054);
+            padding: 0.3rem;
+            background-color: #576CBC;
+            text-align: center;
+        }
+        
+        .toggle button {
+            padding: 0.8rem;
+            font-weight: 600;
+        }
+    
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 5px;
+            align-items: center;
+        }
+        
+        .grid section {
+            text-align: center;
+            outline-style:solid;
+            outline-width: thin;
+            background-color: #576CBC;
+            color: whitesmoke;
+            padding: 15px;
+            margin-top: 10px;
+            height: 100%;  
+        }
+    
+        .grid section:hover {
+            box-shadow: 0 0 50px #333;
+          }
+        
+        .grid img {
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px #333;
+            grid-column: 1/2;
+        }
+        
+        .grid section > * {
+            margin: 0.1rem;
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 0.8em;
+        }
+        
+        .grid h3 {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+        
+        .list {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .list section {
+            display: grid;
+            grid-template-columns: 100%;
+            margin: 0;
+            padding: 0.25rem;
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 0.8em;
+        }
+        
+        .list section > * {
+            margin: 0 1rem;
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 0.8em;
+        }
+        
+        .list section img {
+            display: none;       
+        }
+        
+        .list section h3 {
+            font-size: 0.9rem;
+            font-family: Poppins;
+            font-weight: 500;
+        }
+        
+        .list section:nth-child(even) {
+            background-color: #576bbc56;
+        }
+
 }
