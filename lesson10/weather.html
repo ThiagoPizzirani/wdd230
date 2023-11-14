@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWeatherMap.org API Test - BYUI WDD 230 Project</title>
+    <style>
+        body {
+      margin:0 auto;
+      display: grid;
+      width: 500px;
+      color: rgb(61, 61, 134);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       }
+       #current-temp{ font-weight: 800;}
+       h1 {font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.5em;}
+    </style>
+</head>
+<body>
+    <h1>OpenWeatherMap.org API Test</h1>
+    <main>
+        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+        <figure>
+            <img id="weather-icon" src="" alt="">
+            <figcaption id="description"></figcaption>
+        </figure>
+        <div id="moreinfo"></div>
+    </main>
+    <footer>
+        [Thiago Pizzirani]  | OpenWeatherMap.org  |  CC BY-SA 4.0
+    </footer>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>

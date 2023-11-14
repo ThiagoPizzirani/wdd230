@@ -122,6 +122,15 @@
         "title": "New ward member"
         }
     ]
+  },
+  {
+    "lesson": "10: ",
+    "links": [
+        {
+            "url": "lesson10/weather.html",
+            "title": "OpenWeather API"
+        }
+    ]
   }
 ]
 
