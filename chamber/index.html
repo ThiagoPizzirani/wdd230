@@ -19,8 +19,8 @@
 </head>
 <body>
     <div id="mode">
-        ☑️dark
-    </div>
+            ☑️dark
+        </div>
     <header>
         <div id="logo"><img src="images/logo-chamber.webp" alt="logo of the round rock chamber"></div>
         <div id="social"><img src="images/facebook-icon.WEBP" alt="social icon of facebook"><img src="images/linkedin-icon.WEBP" alt="social icon of linkedin"></div>
@@ -34,10 +34,12 @@
             </ul>
             
         </nav>
+        
     </header>
     
     <main>
         <!-- week 6 Hero change -->
+        <div id="week-banner"></div>
         <div class="hero">
             <picture>
                 <source srcset="images/wdd230-week6-small.webp" media="(max-width: 500px)">
@@ -65,20 +67,30 @@
         <section id="content">
             <div id="events">
                 <h3>Events</h3>
-                <p>Tuesday, October 3, 2023 8:00 - 10:00 AM CST</p>
-                <p>Centro Event Space</p>
-                <p>305 W Liberty Avenue 2nd Floor - Round Rock, TX 78664</p>
+                <p>Tuesday, November 21, 2023 8:00 - 10:00 AM CST</p>
+                <p>Centre Event Space</p>
+                <p>305 W Liberty Avenue 2nd Floor - Hutto, TX 78664</p>
+                <br><hr>
+                <p><br>Saturday, December 9, 2023 1:00 - 3:00 PM CST</p>
+                <p>Round Rock Chamber Room 5</p>
+                <p>2800 I-35 N - Round Rock, TX 78664</p>
 
             </div>
             <div id="weather">
                 <h3>Weather</h3>
-                <span id="location">Rexburg, Idaho</span><br>
-                <span id="weather-info"><img src="images/weather-icon.WEBP" alt="cloud rain icon"> <span id="windchill-result"></span></span>
+                <p>Temperature in Round Rock, TX: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption id="description"></figcaption>
+                </figure>
+                <div id="moreinfo"></div> 
+               
                 <div id="inputs">
                     <br>Air temperature (°F): <input type="text" id="input-air-temp">
                     <br>Wind speed (mph):<input type="text" id="input-wind-speed"> 
                 <button id ="wind-chill" type="submit">Wind Chill Index</button>
                 </div>
+                <div id="windchill-result"></div>
             </div>
         </section>
         <section id="members">

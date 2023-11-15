@@ -13,7 +13,7 @@ const date = document.lastModified;
       const lastModified = new Date(date).toLocaleString();
       document.getElementById("last-mod").innerHTML = "Last Modification: " + lastModified;
 
-const setdate = new Date().getDate();
+/** const setdate = new Date().getDate();
 
 const timestamp = Date.now()
 const timestampconv = new Date(timestamp).getDate()
@@ -29,6 +29,7 @@ let dateVisit = Number(localStorage.getItem("dateVisitmsg")) || setdate;
      } else {
            visitmsg1.innerHTML = "Welcome, let us know if you have any questions";
      } 
+**/
 
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
@@ -38,7 +39,7 @@ const card3 = document.querySelector(".member-card3");
 const events = document.querySelector("#events");
 const weather = document.querySelector("#weather");
       
-/**      modeButton.addEventListener("click", () => {
+     modeButton.addEventListener("click", () => {
             if (modeButton.textContent.includes("☑️dark")) {
                   main.style.background = "#000";
                   card.style.background = "#000";
@@ -62,7 +63,7 @@ const weather = document.querySelector("#weather");
                   weather.style.color = "rgb(219, 186, 55)";
                   modeButton.textContent = "☑️dark";
             }
-      });  */
+      });  
 
       
 let field = document.querySelector('#timestamp');

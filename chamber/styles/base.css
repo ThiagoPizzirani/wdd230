@@ -207,7 +207,7 @@
     .herolabel-small {
         position: absolute;
         display: block;
-        top: 30px;
+        top: 120px;
         left: 30px;
         background: radial-gradient(#fff, #1e3590);
         border: 1px solid rgba(0,0,0,.75);
@@ -445,4 +445,28 @@
             background-color: #576bbc56;
         }
 
+        #moreinfo {
+            color: white;
+            margin-left: 40px;
+        }
+
+        #week-banner{
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px #333;
+            grid-column: 1/ 4;
+            background-color: #A5D7E8;
+            margin: 15px;
+            padding: 10px
+        }
+
+        #week-banner::before {
+            content: "❌";
+            background-color: gray;
+            border: 1px solid #090909;
+            margin: 10px;
+        }
+    
+        #week-banner.close {
+            display: none;
+        }
 }
