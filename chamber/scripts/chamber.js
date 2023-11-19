@@ -66,10 +66,10 @@ const weather = document.querySelector("#weather");
       });  
 
       
-let field = document.querySelector('#timestamp');
-let timenow = Date.now();
+// let field = document.querySelector('#timestamp');
+// let timenow = Date.now();
 // Set the date
-field.value = timenow;
+// field.value = timenow;
 
 const input = document.querySelector("#title");
 const output = document.querySelector("#output");

@@ -4,7 +4,7 @@ let allList = new Array();
 
 function construct(membersList) {
     allList = membersList;
-      console.log(allList);
+      //console.log(allList);
       
     const Listing = document.querySelector("#gridList");
     allList.forEach((currentItem) => {
