@@ -408,6 +408,38 @@
             font-weight: 500;
             font-size: 0.9em;
         }
+
+        .grid-home {
+            display: block;
+            grid-gap: 10px;
+            align-items: center;
+            margin: 20px;
+        }
+    
+        .grid-home section {
+            text-align: center;
+            outline-style:solid;
+            outline-width: thin;
+            background-color: #576CBC;
+            color: whitesmoke;
+            padding: 15px;
+            margin-top: 10px;
+            
+        }
+    
+        .grid-home section > * {
+            margin: 0.1rem;
+            font-family: Poppins;
+            font-weight: 300;
+            font-size: 0.8em;
+        }
+        
+        .grid-home h3 {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+    
         
         .list {
             display: flex;

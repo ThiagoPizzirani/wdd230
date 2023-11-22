@@ -71,22 +71,39 @@ const weather = document.querySelector("#weather");
 // Set the date
 // field.value = timenow;
 
-const input = document.querySelector("#title");
-const output = document.querySelector("#output");
 
-const re = /([A-Z,a-z, ,-]){7}\w+/g;
+let allList = new Array();
 
-function testInfo(title) {
-  const ok = re.exec(title.value);
+function construct(membersList) {
+    allList = membersList;
 
-  output.textContent = ok
-    ? ''
-    : `Title only accepts alpha characters, hyphens, and spaces with a minimum of 7 characters `;
-}
+    const Listing = document.querySelector("#gridList");
+    for (let i = 0; i < 3; i++) {
 
-input.addEventListener("change", (event) => {
-  event.preventDefault();
-  testInfo(input);
-});       
+            if (allList[i].membership != "Bronze") {
+           const html = `<section>
+           <img src='${allList[i].icon}' width = \'120px\'; height:\'120px\'>
+           <h3>${'Business Name: ' + allList[i].name}</h3>
+           <h4>${'Address: ' + allList[i].address}</h4>
+           <h4>${'Phone Number: ' + allList[i].phonenumber}</h4>
+           <h4>${'Website: ' + allList[i].website + ' years'}</h4>
+           <h4>${'Membership: ' + allList[i].membership + ' - since: ' + allList[i].since}</h4>
+           </section>`;
+          Listing.innerHTML += html;
 
+       } 
+      }
+    };
 
+const jsonurl = 'data/members.json'
+
+async function getMembers(jsonurl) {
+    const response = await fetch(jsonurl);
+    if (response.ok) {
+      const membersList = await response.json();
+      construct(membersList.members);
+      return membersList.members;
+    }
+  }
+
+getMembers(jsonurl);

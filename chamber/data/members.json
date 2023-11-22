@@ -23,7 +23,7 @@
         "address" : "3071 CR 110, Hutton, TX",
         "phonenumber" : "(521) 577-1234",
         "website" : "www.saltplumbing.com",
-        "icon" : "images/saltplumbing.WEBP",
+        "icon" : "images/saltplumbing.webp",
         "membership" : "Silver",
         "since" : "2011"
       },
@@ -41,7 +41,7 @@
         "address" : "93000 FM 815, Austin, TX",
         "phonenumber" : "(521) 222-4444",
         "website" : "www.ctrefuseatx.com",
-        "icon" : "images/centraltexasrefuse.WEBP",
+        "icon" : "images/centraltexasrefuse.webp",
         "membership" : "Gold",
         "since" : "1999"
       },
