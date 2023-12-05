@@ -1,4 +1,4 @@
-document.getElementById("year").innerHTML = "&copy" + new Date().getFullYear();
+document.getElementById("year").innerHTML = "Educational site only by Thiago Pizzirani - WDD230 &copy" + new Date().getFullYear();
 
 const date = document.lastModified;
       const lastModified = new Date(date).toLocaleString();

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Final Project - Scoots">
+    <meta name="author" content="Thiago Pizzirani">
+    <meta property="og:title" content="WWD230 - Final Web Project - Scoots" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thiagopizzirani.github.io/wdd230/scoots/" />
+    <meta property="og:image" content="https://images.app.goo.gl/oCaQAAaMv1oftyTB7" />
+    <meta name="keywords" content="Web Projects, Scooters, Mexico, Rental">
+    <title>Rent Your Scooter Today! - Scoots</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/scoots-mobile.css">
+    <link rel="stylesheet" href="styles/scoots-large.css">
+</head>
+<body>
+    
+    <header>
+        <div id="logo"><a href="index.html"><img src="images/scoots-logo.webp" alt="logo of Scoots rental company"></a></div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" >Home</a> &nbsp; &nbsp; </li>
+                <li><a href="rentals.html">Rentals</a> &nbsp; &nbsp; </li>
+                <li><a href="reservation.html" class="active">Reservation</a> &nbsp; &nbsp; </li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div id="social"><a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.WEBP" alt="social icon of Facebook"></a><a href="https://youtube.com" target="_blank"><img src="images/youtube_icon.webp" alt="social icon of Youtube"></a><p>rentals@scoots.co.mx</p></div>
+
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <picture>
+                <source srcset="images/cozumel-port.webp" media="(max-width: 550px)">
+                <img src="images/cozumel-port.webp" alt="Cozumel city sign" loading="lazy" width="360" height="200">
+            </picture>
+                <form method="get" action="#" id="form">
+                    <fieldset>
+                        <legend>Your Personal Information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                        <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+                        <label class="top">Email* <input type="email" name="email" id="email" placeholder="addyouremail@gmail.com" required></label>
+                        <label class="top">Phone Number* <input type="phone" name="phone" id="phone" placeholder="+1 208 555-0000" required></label>
+                        <label class="top">State and Country* <input type="text" name="location" id="location"></label>
+                        <label class="top">Cruise Line <input type="text" name="cruise" id="cruise" placeholder="if applicable"></label>
+            </fieldset>
+
+                <fieldset>
+                    <legend>Your Reservation Needs</legend>
+                    
+                    <label class="top">First day of Rental <input type="date" id="date" name="date"></label>
+                    <label class="top">How many days <input type="number" id="daysrental" name="daysrental"></label>
+                    <div>Select your vehicle</div>
+                    <label class="top">
+                        <select name="rentals" id="rentals">
+                            <option value="metropolitan">Honda Metropolitan (49cc) - 1 person</option>
+                            <option value="dio">Scooter - Honda Dio (110cc) - 2 person</option>
+                            <option value="pcx150">Scooter - Honda PCX150 (149cc) - 2 Person</option>
+                            <option value="pioneer">ATV - Honda Pioneer 1000 - 4 person</option>
+                            <option value="jeep4">Jeep Wrangler - 4 door manual with A/C - 5 person</option>
+                            <option value="jeep2">Jeep Wrangler - 2 door - open air - manual - 4 person</option>
+                          </select>
+                    </label>
+                    <label class="top">How many vehicles <input type="number" id="numvec" name="numvec"></label>
+                    
+                    <label class="top">Special Accommodations <textarea name="comment" id="comment" rows="4" cols="50" placeholder="drop-off request, comments"></textarea></label>
+                    
+                        <input type="submit" value="Reserve Now" name="submitBtn" id="submitBtn">
+                </fieldset>
+
+                </form>
+                
+        </section>
+        <section id="hero-content-reserv">
+            <p><h4>We guarantee your satisfaction</h4>
+            If you have any questions, please <a href="contact.html" >contact us.</a><br><br><strong> We have 300+ ⭐⭐⭐⭐⭐ reviews.</strong></p><br>
+            <p><h4>Rental Services and Agreements</h4>
+              <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul></p>
+
+            <div id="road-trip">
+                <p><br><h4>There are amazing places to visit! <br>We have the driving guides for you</h4>
+                    <picture>
+                <source srcset="images/cozumel-road-trip-map.webp" media="(max-width: 550px)">
+                <img src="images/cozumel-road-trip-map.webp" alt="Cozumel city sign" loading="lazy" width="500" height="360">
+            </picture></div>
+
+        </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div id="weather">
+            <p>Temperature in Cozumel, MX: <span id="current-temp"></span>  &nbsp; &nbsp;  ||  &nbsp;&nbsp;  We are here to help: rentals@scoots.co.mx</p>
+            
+            <br><p id="year"></p>
+        <div><p><a href="attribution.html">Attribution</a></p></div>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+</body>
+</html>

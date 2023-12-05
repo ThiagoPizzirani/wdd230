@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Final Project - Scoots">
+    <meta name="author" content="Thiago Pizzirani">
+    <meta property="og:title" content="WWD230 - Final Web Project - Scoots" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thiagopizzirani.github.io/wdd230/scoots/" />
+    <meta property="og:image" content="https://images.app.goo.gl/oCaQAAaMv1oftyTB7" />
+    <meta name="keywords" content="Web Projects, Scooters, Mexico, Rental">
+    <title>Rent Your Scooter Today! - Scoots</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/scoots-mobile.css">
+    <link rel="stylesheet" href="styles/scoots-large.css">
+</head>
+<body>
+    
+    <header>
+        <div id="logo"><a href="index.html"><img src="images/scoots-logo.webp" alt="logo of Scoots rental company"></a></div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a> &nbsp; &nbsp; </li>
+                <li><a href="rentals.html">Rentals</a> &nbsp; &nbsp; </li>
+                <li><a href="reservation.html">Reservation</a> &nbsp; &nbsp; </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div id="social"><a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.WEBP" alt="social icon of Facebook"></a><a href="https://youtube.com" target="_blank"><img src="images/youtube_icon.webp" alt="social icon of Youtube"></a><p>rentals@scoots.co.mx</p></div>
+
+    </header>
+
+    <main>
+        <section id="sign">
+            <picture>
+                <source srcset="images/cozumel-sign-small.webp" media="(max-width: 550px)">
+                <img src="images/cozumel-sign.webp" alt="Cozumel city sign" loading="lazy" width="600" height="400">
+            </picture>
+        </section>
+        <section id="hero-content">Welcome to SCOOTS. Drive away from crowded places. Visit all Cozumel island!
+            <p> <button id="rental"><a href="reservation.html">Rent Now</a></button></p></section>
+        <section id="scooter"><img src="images/cozumel-scooter.webp" alt="scooter image - for rental" loading="lazy"></section>
+        <div id="scooter-content">
+            <h3>The Best Honda Motor Scooters & ATVs for Rent</h3>
+                <ul>
+                    <li>Honda Metropolitan (49cc) - 1 person</li>
+                    <li>Honda Dio (110cc) - 2 person</li>
+                    <li>Honda PCX150 (149cc) - 2 person</li>
+                    <li>Honda Pioneer ATV 1000 - 4 person</li>
+                </ul>
+        </div>
+        <section id="jeep"><img src="images/cozumel-jeep-rental.webp" alt="jeep image - for rental" loading="lazy"></section>
+        <div id="jeep-content">
+            <h3>Have fun with Jeep Wranglers for Rent</h3>
+                <ul>
+                    <li>Jeep Wrangler - 4 door manual with A/C - 5 person</li>
+                    <li>Jeep Wrangler - 2 door - open air - manual - 4 person</li>
+                </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div id="weather">
+            <p>Temperature in Cozumel, MX: <span id="current-temp"></span>  &nbsp; &nbsp;  ||  &nbsp;&nbsp;  We are here to help: rentals@scoots.co.mx</p>
+            <figure>
+                <img id="weather-icon" src="#" alt="#">
+                <figcaption id="description"></figcaption><div id="moreinfo"></div>
+            </figure>
+            
+            <br><p id="year"></p>
+        <div><p><a href="attribution.html">Attribution</a></p></div>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+</body>
+</html>

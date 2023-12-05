@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Final Project - Scoots">
+    <meta name="author" content="Thiago Pizzirani">
+    <meta property="og:title" content="WWD230 - Final Web Project - Scoots" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thiagopizzirani.github.io/wdd230/scoots/" />
+    <meta property="og:image" content="https://images.app.goo.gl/oCaQAAaMv1oftyTB7" />
+    <meta name="keywords" content="Web Projects, Scooters, Mexico, Rental">
+    <title>Rent Your Scooter Today! - Scoots</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/scoots-mobile.css">
+    <link rel="stylesheet" href="styles/scoots-large.css">
+</head>
+<body>
+    
+    <header>
+        <div id="logo"><a href="index.html"><img src="images/scoots-logo.webp" alt="logo of Scoots rental company"></a></div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" >Home</a> &nbsp; &nbsp; </li>
+                <li><a href="rentals.html">Rentals</a> &nbsp; &nbsp; </li>
+                <li><a href="reservation.html">Reservation</a> &nbsp; &nbsp; </li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div id="social"><a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.WEBP" alt="social icon of Facebook"></a><a href="https://youtube.com" target="_blank"><img src="images/youtube_icon.webp" alt="social icon of Youtube"></a><p>rentals@scoots.co.mx</p></div>
+
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <form method="get" action="#" id="form">
+                <fieldset>
+                    <legend>Send your questions or comments</legend>
+                    <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+                    <label class="top">Email* <input type="email" name="email" id="email" placeholder="addyouremail@gmail.com" required></label>
+                    <label class="top">Comment* <textarea name="comment" id="comment" rows="4" cols="50"></textarea></label>
+                <input type="submit" value="Send Your Question" name="submitBtn" id="submitBtn">
+            
+            </fieldset>
+            </form>
+        </section>
+        <section id="hero-content">You can always contact us at: rentals@scoots.co.mx and +52 (987) 555-3400.
+            <div id="contact-img"><br><picture>
+                <source srcset="images/cozumel-southeast-coast.webp" media="(max-width: 550px)">
+                <img src="images/cozumel-southeast-coast.webp" alt="Cozumel sea coast" loading="lazy" width="350" height="230">
+            </picture></div>
+        </section>
+        <section id="scooter">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3736.8769735423352!2d-86.95028428884851!3d20.511268980932538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDMwJzQwLjYiTiA4NsKwNTYnNTEuNyJX!5e0!3m2!1sen!2sus!4v1701484593122!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div id="scooter-content">
+            <h3>Store 1: near the Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel</h3>
+                <ul>
+                    <li>Scooters, ATVs and Jeeps for rent.</li>
+                    <li>Friendly service. Great Prices!</li>
+                </ul>
+        </div>
+        <section id="jeep">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7444277706427!2d-86.9779012888494!3d20.475687580959764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1701484714712!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+        </section>
+        <div id="jeep-content">
+            <h3>Store 2: near the Terminal Puerta Maya further south along the coast</h3>
+                <ul>
+                    <li>Scooters, ATVs and Jeeps for rent.</li>
+                    <li>Friendly service. Great Prices!</li>
+                </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div id="weather">
+            <p>Temperature in Cozumel, MX: <span id="current-temp"></span>  &nbsp; &nbsp;  ||  &nbsp;&nbsp;  We are here to help: rentals@scoots.co.mx</p>
+            
+            <br><p id="year"></p>
+        <div><p><a href="attribution.html">Attribution</a></p></div>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+</body>
+</html>

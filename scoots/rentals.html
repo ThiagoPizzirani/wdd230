@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Final Project - Scoots">
+    <meta name="author" content="Thiago Pizzirani">
+    <meta property="og:title" content="WWD230 - Final Web Project - Scoots" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://thiagopizzirani.github.io/wdd230/scoots/" />
+    <meta property="og:image" content="https://images.app.goo.gl/oCaQAAaMv1oftyTB7" />
+    <meta name="keywords" content="Web Projects, Scooters, Mexico, Rental">
+    <title>Rent Your Scooter Today! - Scoots</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles/scoots-mobile.css">
+    <link rel="stylesheet" href="styles/scoots-large.css">
+</head>
+<body>
+    
+    <header>
+        <div id="logo"><a href="index.html"><img src="images/scoots-logo.webp" alt="logo of Scoots rental company"></a></div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html" >Home</a> &nbsp; &nbsp; </li>
+                <li><a href="rentals.html" class="active">Rentals</a> &nbsp; &nbsp; </li>
+                <li><a href="reservation.html">Reservation</a> &nbsp; &nbsp; </li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+            
+        </nav>
+        <div id="social"><a href="https://facebook.com" target="_blank"><img src="images/facebook-icon.WEBP" alt="social icon of Facebook"></a><a href="https://youtube.com" target="_blank"><img src="images/youtube_icon.webp" alt="social icon of Youtube"></a><p>rentals@scoots.co.mx</p></div>
+
+    </header>
+
+    <main>
+        
+        <section id="hero-content">
+            <p>We guarantee the <strong>Best Prices</strong> in Cozumel</p>
+            <p>If you have any questions, please <a href="contact.html" >contact us.</a></p>
+            <p>We have 300+ ⭐⭐⭐⭐⭐ reviews.</p>
+        </section>
+        
+        <div id="scooter-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6" scope="colgroup">SCOOTS Max Rental Pricing</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2" scope="colgroup"></th>
+                        <th colspan="2" scope="colgroup">Reservation</th>
+                        <th colspan="2" scope="colgroup">Walk-In</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Rental Type</th>
+                        <th scope="col">Max. Persons</th>
+                        <th scope="col">Half Day (3 hrs)</th>
+                        <th scope="col">Full Day</th>
+                        <th scope="col">Half Day (3 hrs)</th>
+                        <th scope="col">Full Day</th>
+                    </tr>
+                </thead>
+                <tbody id="price">
+                    
+                </tbody>
+            </table>
+        </div>
+      
+    </main>
+
+    <footer>
+        <div id="weather">
+            <p>Temperature in Cozumel, MX: <span id="current-temp"></span>  &nbsp; &nbsp;  ||  &nbsp;&nbsp;  We are here to help: rentals@scoots.co.mx</p>
+            
+            <br><p id="year"></p>
+        <div><p><a href="attribution.html">Attribution</a></p></div>
+    </footer>
+    <script src="scripts/scoots.js"></script>
+</body>
+</html>

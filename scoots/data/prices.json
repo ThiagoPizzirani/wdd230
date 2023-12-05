@@ -1,0 +1,53 @@
+{
+    "rentals" : [
+      {
+        "type" : "Honda Metro Scooter",
+        "max" : 1,
+        "halfreserv" : "$20",
+        "fullreserv" : "$30",
+        "halfwalk" : "$25",
+        "fullwalk" : "$35"
+       },
+       {
+        "type" : "Honda Dio Scooter",
+        "max" : 2,
+        "halfreserv" : "$30",
+        "fullreserv" : "$40",
+        "halfwalk" : "$35",
+        "fullwalk" : "$45"
+       },
+       {
+        "type" : "Honda PCV150 Scooter",
+        "max" : 2,
+        "halfreserv" : "$40",
+        "fullreserv" : "$50",
+        "halfwalk" : "$45",
+        "fullwalk" : "$55"
+       },
+       {
+        "type" : "Honda Pioneer ATV",
+        "max" : 4,
+        "halfreserv" : "$50",
+        "fullreserv" : "$70",
+        "halfwalk" : "$60",
+        "fullwalk" : "$80"
+       },
+       {
+        "type" : "Jeep Wrangler 4 door + A/C",
+        "max" : 5,
+        "halfreserv" : "$70",
+        "fullreserv" : "$100",
+        "halfwalk" : "$85",
+        "fullwalk" : "$125"
+       },
+       {
+        "type" : "Jeep Wrangler 2 door",
+        "max" : 4,
+        "halfreserv" : "$60",
+        "fullreserv" : "$85",
+        "halfwalk" : "$70",
+        "fullwalk" : "$90"
+       }
+      
+    ]
+  }
