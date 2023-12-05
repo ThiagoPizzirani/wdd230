@@ -46,7 +46,7 @@
                         <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
                         <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
                         <label class="top">Email* <input type="email" name="email" id="email" placeholder="addyouremail@gmail.com" required></label>
-                        <label class="top">Phone Number* <input type="phone" name="phone" id="phone" placeholder="+1 208 555-0000" required></label>
+                        <label class="top">Phone Number* <input type="tel" name="tel" id="phone" placeholder="+1 208 555-0000" required></label>
                         <label class="top">State and Country* <input type="text" name="location" id="location"></label>
                         <label class="top">Cruise Line <input type="text" name="cruise" id="cruise" placeholder="if applicable"></label>
             </fieldset>
@@ -78,8 +78,8 @@
                 
         </section>
         <section id="hero-content-reserv">
-            <p><h4>We guarantee your satisfaction</h4>
-            If you have any questions, please <a href="contact.html" >contact us.</a><br><br><strong> We have 300+ ⭐⭐⭐⭐⭐ reviews.</strong></p><br>
+            <p><h4>We guarantee your satisfaction</h4></p>
+            <p>If you have any questions, please <a href="contact.html" >contact us.</a><br><br><strong> We have 300+ ⭐⭐⭐⭐⭐ reviews.</strong></p><br>
             <p><h4>Rental Services and Agreements</h4>
               <ul>
                 <li>A $50 security deposit is required to confirm reservations.</li>
@@ -99,7 +99,7 @@
                     <picture>
                 <source srcset="images/cozumel-road-trip-map.webp" media="(max-width: 550px)">
                 <img src="images/cozumel-road-trip-map.webp" alt="Cozumel city sign" loading="lazy" width="500" height="360">
-            </picture></div>
+            </picture></p></div>
 
         </div>
         </section>
@@ -109,7 +109,11 @@
     <footer>
         <div id="weather">
             <p>Temperature in Cozumel, MX: <span id="current-temp"></span>  &nbsp; &nbsp;  ||  &nbsp;&nbsp;  We are here to help: rentals@scoots.co.mx</p>
-            
+            <figure>
+                <img id="weather-icon" src="#" alt="#">
+                <figcaption id="description"></figcaption>
+            </figure><div id="moreinfo"></div>
+        </div>
             <br><p id="year"></p>
         <div><p><a href="attribution.html">Attribution</a></p></div>
     </footer>
